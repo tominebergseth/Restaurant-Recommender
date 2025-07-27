@@ -8,6 +8,9 @@
 ## Results
 - I combined PySpark for distributed feature engineering and XGBoost for regression modeling, achieving 0.973 RMSE on the final hidden test set.
 
+## Quick Implementation Note:
+- This implementation was optimized for a competition setting with strict runtime limits, so some parts (like nested tuple indexing in PySpark) are intentionally unrefined for speed. In a production setting, I would refactor it into modular, maintainable code with clearer data schemas.
+- 
 ## Technical Approach
 - End-to-end ML pipeline: data preprocessing, feature engineering, model tuning, and evaluation
 - Feature-rich approach: engineered business-, user-, and interaction-level features from multiple JSON and CSV sources
